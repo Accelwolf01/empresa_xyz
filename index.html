@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Compañía de Cómputo y Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-section {
+            float: right; /* Alinea el video a la derecha */
+            width: 40%; /* Ancho del video */
+            margin-left: 20px; /* Margen izquierdo para separarlo del contenido */
+        }
+
+        .video-section video {
+            width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenido a la Compañía de Cómputo y Tecnología</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mision.php">Misión</a></li>
+                    <li><a href="vision.php">Visión</a></li>
+                    <li><a href="historia.php">Historia</a></li>
+                    <li><a href="sedes.php">Sedes</a></li>
+                    <li><a href="productos.php">Productos</a></li>
+                    <li><a href="contactenos.php">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container content">
+        <section class="hero-section">
+            <h2>Descubre nuestra increíble selección de equipos de cómputo y tecnología</h2>
+            <p>En la Compañía de Cómputo y Tecnología, nos dedicamos a ofrecerte los mejores equipos al mejor precio.</p>
+            <a href="productos.php" class="button">Ver Productos</a>
+        </section>
+        
+        <section class="video-section">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section class="about-section">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa líder en la venta de equipos de cómputo y tecnología. Con más de 20 años de experiencia en el mercado, nos enorgullece ofrecer a nuestros clientes una amplia gama de opciones para que encuentren los equipos perfectos para sus necesidades.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© <?php echo date("Y"); ?> Compañía de Cómputo y Tecnología. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

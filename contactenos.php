@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Compañía de Cómputo y Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contacto - Compañía de Cómputo y Tecnología</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mision.php">Misión</a></li>
+                    <li><a href="vision.php">Visión</a></li>
+                    <li><a href="historia.php">Historia</a></li>
+                    <li><a href="sedes.php">Sedes</a></li>
+                    <li><a href="productos.php">Productos</a></li>
+                    <li><a href="contactenos.php">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container content">
+        <section class="contact-section">
+            <h2>Información de Contacto</h2>
+            <p>Puedes ponerte en contacto con nosotros de las siguientes maneras:</p>
+            <ul>
+                <li>Teléfono: +1234567890</li>
+                <li>Correo electrónico: info@companiadecomputo.com</li>
+                <li>Dirección: Calle Principal, Ciudad Principal, País</li>
+            </ul>
+            <p>También puedes completar el siguiente formulario y nos pondremos en contacto contigo lo antes posible:</p>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© <?php echo date("Y"); ?> Compañía de Cómputo y Tecnología. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
